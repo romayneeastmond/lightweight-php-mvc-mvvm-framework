@@ -1,0 +1,48 @@
+html {
+	overflow-x: hidden !important;
+    overflow: -moz-scrollbars-vertical;
+}
+
+body {
+    padding-top: 70px;
+}
+
+code {
+    background-color: transparent;
+}
+
+#ExampleViewModelAnnotatedOptionsSmall > li > a {
+    font-size: 85% !important;
+    padding: 3px !important;
+}
+
+.example-view-model {
+    overflow: hidden;
+}
+
+h1.h2 {
+    font-size: 2.75em;
+}
+
+.highlight-php {
+    background-color: #F7F7F9;
+    border: 1px solid #E1E1E8;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible !important;
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: none !important;
+}
+
+.panel-tab {
+    border-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
