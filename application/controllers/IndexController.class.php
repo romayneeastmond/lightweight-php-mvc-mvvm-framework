@@ -52,8 +52,6 @@
          */
         public function examplesAction()
         {
-            $this->view->title = "Examples";
-
-            return $this->view();
+            $this->redirect("simple-controller-example", "");
         }
 	} /*end of class IndexController*/
