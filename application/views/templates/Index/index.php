@@ -13,7 +13,7 @@
 <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-cogs"></i> Controllers</h3>
-        <p>
+        <p class="fixed-height-100">
             Responds to requests via actions that are responsible for tying specific models, view models, and views together.
         </p>
         <p>
@@ -24,7 +24,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-object-ungroup"></i> Models</h3>
-        <p>
+        <p class="fixed-height-100">
             Captures functionality that is typically a set of methods that interact closely with actions, repositories, or services.
         </p>
         <p>
@@ -35,7 +35,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-picture-o"></i> Views</h3>
-        <p>
+        <p class="fixed-height-100">
             Houses a collection of presentation focused templates that provide the controller with a way of expressing output.
         </p>
         <p>
@@ -46,7 +46,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-rocket"></i> ViewModels</h3>
-        <p>
+        <p class="fixed-height-100">
             Ties data closely to the view by binding view model data into special placeholders that make displaying data easier.
         </p>
         <p>
@@ -59,7 +59,7 @@
 <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-commenting-o"></i> Annotations</h3>
-        <p>
+        <p class="fixed-height-100">
             Extends phpdoc metadata to do behind the scenes work such as automatic class inclusion or decorating data bound properties.
         </p>
         <p>
@@ -70,7 +70,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-puzzle-piece"></i> Bundles</h3>
-        <p>
+        <p class="fixed-height-100">
             Defines css and javascript definitions that can be reused within views to add additional styles or functions not defined in layouts.
         </p>
         <p>
@@ -81,7 +81,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-bookmark-o"></i> Aliases</h3>
-        <p>
+        <p class="fixed-height-100">
             Creates a way to "fancify" urls by allowing controller action endpoints to be rewritten in a more human readable (and SEO friendly) way.
         </p>
         <p>
@@ -92,7 +92,7 @@
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
         <h3><i class="fa fa-map-signs"></i> Routing</h3>
-        <p>
+        <p class="fixed-height-100">
             Works in conjunction with controller actions to seamlessly bind action parameters to the logical hierarchy of urls.
         </p>
         <p>

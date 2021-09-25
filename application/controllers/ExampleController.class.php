@@ -63,7 +63,7 @@
          */
         public function controllerApiAction()
         {
-            $this->createExampleDisplayTemplate("Api Type Controller Example", "_controllerApi");
+            $this->createExampleDisplayTemplate("Api Type Controller Example", "_controllerApi", 3);
 
             return $this->view();
         }
@@ -76,7 +76,7 @@
          */
         public function controllerAutomaticAction()
         {
-            $this->createExampleDisplayTemplate("Automatic Routing Controller Example", "_controllerAutomatic");
+            $this->createExampleDisplayTemplate("Automatic Routing Controller Example", "_controllerAutomatic", 2);
 
             return $this->view();
         }
@@ -89,7 +89,7 @@
          */
         public function controllerSimpleAction()
         {
-            $this->createExampleDisplayTemplate("Simple Controller Example", "_controllerSimple");
+            $this->createExampleDisplayTemplate("Simple Controller Example", "_controllerSimple", 1);
 
             return $this->view();
         }
@@ -102,7 +102,7 @@
          */
         public function definingAliasesAction()
         {
-            $this->createExampleDisplayTemplate("Defining Aliases", "_aliases");
+            $this->createExampleDisplayTemplate("Defining Aliases", "_aliases", 11);
 
             return $this->view();
         }
@@ -115,7 +115,7 @@
          */
         public function definingAnnotationsAction()
         {
-            $this->createExampleDisplayTemplate("Defining Annotations", "_annotations");
+            $this->createExampleDisplayTemplate("Defining Annotations", "_annotations", 9);
 
             return $this->view();
         }
@@ -128,7 +128,7 @@
          */
         public function definingBundlesAction()
         {
-            $this->createExampleDisplayTemplate("Defining Bundles", "_bundles");
+            $this->createExampleDisplayTemplate("Defining Bundles", "_bundles", 10);
 
             return $this->view();
         }
@@ -141,7 +141,7 @@
          */
         public function definingRoutesAction()
         {
-            $this->createExampleDisplayTemplate("Defining Routes", "_routes");
+            $this->createExampleDisplayTemplate("Defining Routes", "_routes", 12);
 
             return $this->view();
         }
@@ -169,7 +169,7 @@
          */
         public function modelDefaultBindingAction()
         {
-            $this->createExampleDisplayTemplate("Default Model Binding Example", "_modelDefaultBinding");
+            $this->createExampleDisplayTemplate("Default Model Binding Example", "_modelDefaultBinding", 4);
 
             return $this->view();
         }
@@ -182,7 +182,7 @@
          */
         public function viewSimpleAction()
         {
-            $this->createExampleDisplayTemplate("Action Views Example", "_viewSimple");
+            $this->createExampleDisplayTemplate("Action Views Example", "_viewSimple", 5);
 
             return $this->view();
         }
@@ -195,7 +195,7 @@
          */
         public function viewPartialAction()
         {
-            $this->createExampleDisplayTemplate("Partial Views Example", "_viewPartial");
+            $this->createExampleDisplayTemplate("Partial Views Example", "_viewPartial", 6);
 
             return $this->view();
         }
@@ -211,7 +211,7 @@
          */
         public function viewModelBindingAction()
         {
-            $this->createExampleDisplayTemplate("ViewModel Binding Example", "_viewModelBinding");
+            $this->createExampleDisplayTemplate("ViewModel Binding Example", "_viewModelBinding", 7);
 
             $this->view->content = "Hello World from the <b>ExampleController viewModelBindingAction</b> action";
 
@@ -229,7 +229,7 @@
          */
         public function viewModelFormBindingAction()
         {
-            $this->createExampleDisplayTemplate("Annotated ViewModel Binding Example", "_viewModelAnnotatedBinding");
+            $this->createExampleDisplayTemplate("Annotated ViewModel Binding Example", "_viewModelAnnotatedBinding", 8);
 
             $this->view->content = "Hello World from the <b>ExampleController viewModelFormBindingAction</b> action";
             $this->view->addJavascript("public/js/example.js");
@@ -309,12 +309,15 @@
          *
          * @param string             $title title to load into template
          * @param string             $partial name of partial view to load into template
+         * @param int                $menuIndex unique number that sets the menu active state
          * @return void
          */
-        private function createExampleDisplayTemplate($title, $partial)
+        private function createExampleDisplayTemplate($title, $partial, $menuIndex = 0)
         {
             $this->view->title = $title;
             $this->view->partial = $partial;
+            $this->view->menuIndex = $menuIndex;
+            $this->view->model = $this->model;
 
             $this->view->renderer("Example", "example");
         }
