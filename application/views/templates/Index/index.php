@@ -7,7 +7,7 @@
     </p>
 
     <p>
-        <a class="btn btn-lg btn-primary" href="<?php echo $this->route("examples");?>" role="button">Examples <i class="fa fa-tasks"></i></a>
+        <a class="btn btn-lg btn-outline-info" href="<?php echo $this->route("examples");?>" role="button">Click to View Examples <i class="fa fa-arrow-right"></i></a>
     </p>
 </div>
 <div class="row">
