@@ -28,4 +28,4 @@ The ASP.NET MVC, IIS, Apache, phpdoc name, and any other terms used are copyrigh
 
 Live demo hosted in Microsoft Azure, PHP 7.4 App Service [MVC/MVVM Annotations Framework](https://dev-php-lightweight-mvc-mvvm-framework.azurewebsites.net/).
 
-Azure F1 instances are ice cold :snowflake:. First load might need some warming up. :alarm_clock:⏰
+Azure F1 instances are :snowflake: ice cold. That first load will need some :sun_with_face: warming up.
