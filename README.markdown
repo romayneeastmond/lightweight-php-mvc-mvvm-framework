@@ -23,9 +23,3 @@ Beyond that since the project uses .htaccess to use a rewrite rule to pass all r
 ## Copyright and Ownership
 
 The ASP.NET MVC, IIS, Apache, phpdoc name, and any other terms used are copyright to their original authors.
-
-## Live Demo
-
-Live demo hosted in Microsoft Azure, PHP 7.4 App Service [MVC/MVVM Annotations Framework](https://dev-php-lightweight-mvc-mvvm-framework.azurewebsites.net/).
-
-Azure F1 instances are :snowflake: ice cold. That first load will need some :sun_with_face: warming up.
